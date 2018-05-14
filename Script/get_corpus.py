@@ -16,12 +16,11 @@ parser.add_argument("visual_novel_directory", type=str,
 parser.add_argument("text_directory", type=str,
                     help="directory of text from visual_novel")
 args = parser.parse_args()
-
 #funkction
-for _file in glob.glob(args.visual_novel_directory + "/*.ks"):
-    name = _file.split(sep='/')[1].split(sep='.')[0]
+for _file in glob.glob(args.path + "/" + args.visual_novel_directory + "/*.ks"):
+    name = _file.split(sep='/')[-1].split(sep='.')[0]
     pathlib.Path(args.path + "/" + args.text_directory).mkdir(parents=True, exist_ok=True)
-    out = open(r'' + args.text_directory + '/' + name + '.txt', 'w', encoding='utf-8')
+    out = open(args.path + "/" + args.text_directory + '/' + name + '.txt', 'w', encoding='utf-8')
 
     with open(_file, encoding='utf-16') as f:
         contents = f.read()
