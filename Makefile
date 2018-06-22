@@ -91,19 +91,162 @@ TEST_A=Data/parallel_corpus/g03.txt Data/parallel_corpus/ghh1.txt Data/parallel_
 
 TEST_DATA=Data/data_test_VN/dev-0/expected.tsv Data/data_test_VN/dev-0/in.tsv Data/data_test_VN/dev-1/expected.tsv Data/data_test_VN/dev-1/in.tsv Data/data_test_VN/test-A/expected.tsv Data/data_test_VN/test-A/in.tsv 
 
-TRANSLATOR_DATA_VN=translator_data_vn/dev-0/out.tsv translator_data_vn/dev-1/out.tsv translator_data_vn/test-A/out.tsv translator_data_vn/moonlight/out.tsv translator_data_vn/sleeplessnight/out.tsv translator_data_vn/blackswan/out.tsv translator_data_vn/dev-0/bleu.txt translator_data_vn/dev-1/bleu.txt translator_data_vn/test-A/bleu.txt translator_data_vn/moonlight/bleu.txt translator_data_vn/sleeplessnight/bleu.txt translator_data_vn/blackswan/bleu.txt
+TRANSLATOR_DATA_VN=translator_data_vn/dev-0/in.tsv translator_data_vn/dev-1/in.tsv translator_data_vn/test-A/in.tsv translator_data_vn/moonlight/in.tsv translator_data_vn/sleeplessnight/in.tsv translator_data_vn/blackswan/in.tsv translator_data_vn/dev-0/expected.tsv translator_data_vn/dev-1/expected.tsv translator_data_vn/test-A/expected.tsv translator_data_vn/moonlight/expected.tsv translator_data_vn/sleeplessnight/expected.tsv translator_data_vn/blackswan/expected.tsv translator_data_vn/dev-0/out.tsv translator_data_vn/dev-1/out.tsv translator_data_vn/test-A/out.tsv translator_data_vn/moonlight/out.tsv translator_data_vn/sleeplessnight/out.tsv translator_data_vn/blackswan/out.tsv translator_data_vn/dev-0/bleu.txt translator_data_vn/dev-1/bleu.txt translator_data_vn/test-A/bleu.txt translator_data_vn/moonlight/bleu.txt translator_data_vn/sleeplessnight/bleu.txt translator_data_vn/blackswan/bleu.txt
 
-TRANSLATOR_DATA_DEFAULT=translator_data_default/dev-0/out.tsv translator_data_default/dev-1/out.tsv translator_data_default/test-A/out.tsv translator_data_default/moonlight/out.tsv translator_data_default/sleeplessnight/out.tsv translator_data_default/blackswan/out.tsv translator_data_default/dev-0/bleu.txt translator_data_default/dev-1/bleu.txt translator_data_default/test-A/bleu.txt translator_data_default/moonlight/bleu.txt translator_data_default/sleeplessnight/bleu.txt translator_data_default/blackswan/bleu.txt
+TRANSLATOR_DATA_DEFAULT=translator_data_default/dev-0/in.tsv translator_data_default/dev-1/in.tsv translator_data_default/test-A/in.tsv translator_data_default/moonlight/in.tsv translator_data_default/sleeplessnight/in.tsv translator_data_default/blackswan/in.tsv translator_data_default/dev-0/expected.tsv translator_data_default/dev-1/expected.tsv translator_data_default/test-A/expected.tsv translator_data_default/moonlight/expected.tsv translator_data_default/sleeplessnight/expected.tsv translator_data_default/blackswan/expected.tsv translator_data_default/dev-0/out.tsv translator_data_default/dev-1/out.tsv translator_data_default/test-A/out.tsv translator_data_default/moonlight/out.tsv translator_data_default/sleeplessnight/out.tsv translator_data_default/blackswan/out.tsv translator_data_default/dev-0/bleu.txt translator_data_default/dev-1/bleu.txt translator_data_default/test-A/bleu.txt translator_data_default/moonlight/bleu.txt translator_data_default/sleeplessnight/bleu.txt translator_data_default/blackswan/bleu.txt
 
-TRANSLATOR_DATA_DEFAULT_32=translator_data_default_32/dev-0/out.tsv translator_data_default_32/dev-1/out.tsv translator_data_default_32/test-A/out.tsv translator_data_default_32/moonlight/out.tsv translator_data_default_32/sleeplessnight/out.tsv translator_data_default_32/blackswan/out.tsv translator_data_default_32/dev-0/bleu.txt translator_data_default_32/dev-1/bleu.txt translator_data_default_32/test-A/bleu.txt translator_data_default_32/moonlight/bleu.txt translator_data_default_32/sleeplessnight/bleu.txt translator_data_default_32/blackswan/bleu.txt
+TRANSLATOR_DATA_DEFAULT_32=translator_data_default_32/dev-0/in.tsv translator_data_default_32/dev-1/in.tsv translator_data_default_32/test-A/in.tsv translator_data_default_32/moonlight/in.tsv translator_data_default_32/sleeplessnight/in.tsv translator_data_default_32/blackswan/in.tsv translator_data_default_32/dev-0/expected.tsv translator_data_default_32/dev-1/expected.tsv translator_data_default_32/test-A/expected.tsv translator_data_default_32/moonlight/expected.tsv translator_data_default_32/sleeplessnight/expected.tsv translator_data_default_32/blackswan/expected.tsv translator_data_default_32/dev-0/out.tsv translator_data_default_32/dev-1/out.tsv translator_data_default_32/test-A/out.tsv translator_data_default_32/moonlight/out.tsv translator_data_default_32/sleeplessnight/out.tsv translator_data_default_32/blackswan/out.tsv translator_data_default_32/dev-0/bleu.txt translator_data_default_32/dev-1/bleu.txt translator_data_default_32/test-A/bleu.txt translator_data_default_32/moonlight/bleu.txt translator_data_default_32/sleeplessnight/bleu.txt translator_data_default_32/blackswan/bleu.txt
 
-TRANSLATOR_DATA_ALL=translator_data_all/dev-0/out.tsv translator_data_all/dev-1/out.tsv translator_data_all/test-A/out.tsv translator_data_all/moonlight/out.tsv translator_data_all/sleeplessnight/out.tsv translator_data_all/blackswan/out.tsv translator_data_all/dev-0/bleu.txt translator_data_all/dev-1/bleu.txt translator_data_all/test-A/bleu.txt translator_data_all/moonlight/bleu.txt translator_data_all/sleeplessnight/bleu.txt translator_data_all/blackswan/bleu.txt
+TRANSLATOR_DATA_ALL=translator_data_all/dev-0/in.tsv translator_data_all/dev-1/in.tsv translator_data_all/test-A/in.tsv translator_data_all/moonlight/in.tsv translator_data_all/sleeplessnight/in.tsv translator_data_all/blackswan/in.tsv translator_data_all/dev-0/expected.tsv translator_data_all/dev-1/expected.tsv translator_data_all/test-A/expected.tsv translator_data_all/moonlight/expected.tsv translator_data_all/sleeplessnight/expected.tsv translator_data_all/blackswan/expected.tsv translator_data_all/dev-0/out.tsv translator_data_all/dev-1/out.tsv translator_data_all/test-A/out.tsv translator_data_all/moonlight/out.tsv translator_data_all/sleeplessnight/out.tsv translator_data_all/blackswan/out.tsv translator_data_all/dev-0/bleu.txt translator_data_all/dev-1/bleu.txt translator_data_all/test-A/bleu.txt translator_data_all/moonlight/bleu.txt translator_data_all/sleeplessnight/bleu.txt translator_data_all/blackswan/bleu.txt
 
-TRANSLATOR_DATA_ALL_NMT=translator_data_all_NMT/dev-0/out.tsv translator_data_all_NMT/dev-1/out.tsv translator_data_all_NMT/test-A/out.tsv translator_data_all_NMT/moonlight/out.tsv translator_data_all_NMT/sleeplessnight/out.tsv translator_data_all_NMT/blackswan/out.tsv translator_data_all_NMT/dev-0/bleu.txt translator_data_all_NMT/dev-1/bleu.txt translator_data_all_NMT/test-A/bleu.txt translator_data_all_NMT/moonlight/bleu.txt translator_data_all_NMT/sleeplessnight/bleu.txt translator_data_all_NMT/blackswan/bleu.txt
+TRANSLATOR_DATA_ALL_NMT=translator_data_all_NMT/dev-0/in.tsv translator_data_all_NMT/dev-1/in.tsv translator_data_all_NMT/test-A/in.tsv translator_data_all_NMT/moonlight/in.tsv translator_data_all_NMT/sleeplessnight/in.tsv translator_data_all_NMT/blackswan/in.tsv translator_data_all_NMT/dev-0/expected.tsv translator_data_all_NMT/dev-1/expected.tsv translator_data_all_NMT/test-A/expected.tsv translator_data_all_NMT/moonlight/expected.tsv translator_data_all_NMT/sleeplessnight/expected.tsv translator_data_all_NMT/blackswan/expected.tsv translator_data_all_NMT/dev-0/out.tsv translator_data_all_NMT/dev-1/out.tsv translator_data_all_NMT/test-A/out.tsv translator_data_all_NMT/moonlight/out.tsv translator_data_all_NMT/sleeplessnight/out.tsv translator_data_all_NMT/blackswan/out.tsv translator_data_all_NMT/dev-0/bleu.txt translator_data_all_NMT/dev-1/bleu.txt translator_data_all_NMT/test-A/bleu.txt translator_data_all_NMT/moonlight/bleu.txt translator_data_all_NMT/sleeplessnight/bleu.txt translator_data_all_NMT/blackswan/bleu.txt
 
-TRANSLATOR_DATA_DEFAULT_NMT=translator_data_default_NMT/dev-0/out.tsv translator_data_default_NMT/dev-1/out.tsv translator_data_default_NMT/test-A/out.tsv translator_data_default_NMT/moonlight/out.tsv translator_data_default_NMT/sleeplessnight/out.tsv translator_data_default_NMT/blackswan/out.tsv translator_data_default_NMT/dev-0/bleu.txt translator_data_default_NMT/dev-1/bleu.txt translator_data_default_NMT/test-A/bleu.txt translator_data_default_NMT/moonlight/bleu.txt translator_data_default_NMT/sleeplessnight/bleu.txt translator_data_default_NMT/blackswan/bleu.txt
+TRANSLATOR_DATA_DEFAULT_NMT=translator_data_default_NMT/dev-0/in.tsv translator_data_default_NMT/dev-1/in.tsv translator_data_default_NMT/test-A/in.tsv translator_data_default_NMT/moonlight/in.tsv translator_data_default_NMT/sleeplessnight/in.tsv translator_data_default_NMT/blackswan/in.tsv translator_data_default_NMT/dev-0/expected.tsv translator_data_default_NMT/dev-1/expected.tsv translator_data_default_NMT/test-A/expected.tsv translator_data_default_NMT/moonlight/expected.tsv translator_data_default_NMT/sleeplessnight/expected.tsv translator_data_default_NMT/blackswan/expected.tsv translator_data_default_NMT/dev-0/out.tsv translator_data_default_NMT/dev-1/out.tsv translator_data_default_NMT/test-A/out.tsv translator_data_default_NMT/moonlight/out.tsv translator_data_default_NMT/sleeplessnight/out.tsv translator_data_default_NMT/blackswan/out.tsv translator_data_default_NMT/dev-0/bleu.txt translator_data_default_NMT/dev-1/bleu.txt translator_data_default_NMT/test-A/bleu.txt translator_data_default_NMT/moonlight/bleu.txt translator_data_default_NMT/sleeplessnight/bleu.txt translator_data_default_NMT/blackswan/bleu.txt
 
-all: ${PARALLEL_CORPUS} ${TRAIN_DATA_VN} ${DEV_0} ${DEV_1} ${TEST_A} ${TEST_DATA} ${TRANSLATOR_DATA_VN} ${TRANSLATOR_DATA_DEFAULT} ${TRANSLATOR_DATA_DEFAULT_32} ${TRANSLATOR_DATA_ALL} ${TRANSLATOR_DATA_ALL_NMT} ${TRANSLATOR_DATA_DEFAULT_NMT}
+TRANSLATOR_DATA_ALL_NMT_5=translator_data_all_NMT_5/dev-0/in.tsv translator_data_all_NMT_5/dev-1/in.tsv translator_data_all_NMT_5/test-A/in.tsv translator_data_all_NMT_5/moonlight/in.tsv translator_data_all_NMT_5/sleeplessnight/in.tsv translator_data_all_NMT_5/blackswan/in.tsv translator_data_all_NMT_5/dev-0/expected.tsv translator_data_all_NMT_5/dev-1/expected.tsv translator_data_all_NMT_5/test-A/expected.tsv translator_data_all_NMT_5/moonlight/expected.tsv translator_data_all_NMT_5/sleeplessnight/expected.tsv translator_data_all_NMT_5/blackswan/expected.tsv translator_data_all_NMT_5/dev-0/out.tsv translator_data_all_NMT_5/dev-1/out.tsv translator_data_all_NMT_5/test-A/out.tsv translator_data_all_NMT_5/moonlight/out.tsv translator_data_all_NMT_5/sleeplessnight/out.tsv translator_data_all_NMT_5/blackswan/out.tsv translator_data_all_NMT_5/dev-0/bleu.txt translator_data_all_NMT_5/dev-1/bleu.txt translator_data_all_NMT_5/test-A/bleu.txt translator_data_all_NMT_5/moonlight/bleu.txt translator_data_all_NMT_5/sleeplessnight/bleu.txt translator_data_all_NMT_5/blackswan/bleu.txt
+
+TRANSLATOR_DATA_DEFAULT_NMT_5=translator_data_default_NMT_5/dev-0/in.tsv translator_data_default_NMT_5/dev-1/in.tsv translator_data_default_NMT_5/test-A/in.tsv translator_data_default_NMT_5/moonlight/in.tsv translator_data_default_NMT_5/sleeplessnight/in.tsv translator_data_default_NMT_5/blackswan/in.tsv translator_data_default_NMT_5/dev-0/expected.tsv translator_data_default_NMT_5/dev-1/expected.tsv translator_data_default_NMT_5/test-A/expected.tsv translator_data_default_NMT_5/moonlight/expected.tsv translator_data_default_NMT_5/sleeplessnight/expected.tsv translator_data_default_NMT_5/blackswan/expected.tsv translator_data_default_NMT_5/dev-0/out.tsv translator_data_default_NMT_5/dev-1/out.tsv translator_data_default_NMT_5/test-A/out.tsv translator_data_default_NMT_5/moonlight/out.tsv translator_data_default_NMT_5/sleeplessnight/out.tsv translator_data_default_NMT_5/blackswan/out.tsv translator_data_default_NMT_5/dev-0/bleu.txt translator_data_default_NMT_5/dev-1/bleu.txt translator_data_default_NMT_5/test-A/bleu.txt translator_data_default_NMT_5/moonlight/bleu.txt translator_data_default_NMT_5/sleeplessnight/bleu.txt translator_data_default_NMT_5/blackswan/bleu.txt
+
+TRANSLATOR_DATA_DEFAULT_32_2=translator_data_default_32_2/dev-0/in.tsv translator_data_default_32_2/dev-1/in.tsv translator_data_default_32_2/test-A/in.tsv translator_data_default_32_2/moonlight/in.tsv translator_data_default_32_2/sleeplessnight/in.tsv translator_data_default_32_2/blackswan/in.tsv translator_data_default_32_2/dev-0/expected.tsv translator_data_default_32_2/dev-1/expected.tsv translator_data_default_32_2/test-A/expected.tsv translator_data_default_32_2/moonlight/expected.tsv translator_data_default_32_2/sleeplessnight/expected.tsv translator_data_default_32_2/blackswan/expected.tsv translator_data_default_32_2/dev-0/out.tsv translator_data_default_32_2/dev-1/out.tsv translator_data_default_32_2/test-A/out.tsv translator_data_default_32_2/moonlight/out.tsv translator_data_default_32_2/sleeplessnight/out.tsv translator_data_default_32_2/blackswan/out.tsv translator_data_default_32_2/dev-0/bleu.txt translator_data_default_32_2/dev-1/bleu.txt translator_data_default_32_2/test-A/bleu.txt translator_data_default_32_2/moonlight/bleu.txt translator_data_default_32_2/sleeplessnight/bleu.txt translator_data_default_32_2/blackswan/bleu.txt
+
+TRANSLATOR_DATA_DEFAULT_2=translator_data_default_2/dev-0/in.tsv translator_data_default_2/dev-1/in.tsv translator_data_default_2/test-A/in.tsv translator_data_default_2/moonlight/in.tsv translator_data_default_2/sleeplessnight/in.tsv translator_data_default_2/blackswan/in.tsv translator_data_default_2/dev-0/expected.tsv translator_data_default_2/dev-1/expected.tsv translator_data_default_2/test-A/expected.tsv translator_data_default_2/moonlight/expected.tsv translator_data_default_2/sleeplessnight/expected.tsv translator_data_default_2/blackswan/expected.tsv translator_data_default_2/dev-0/out.tsv translator_data_default_2/dev-1/out.tsv translator_data_default_2/test-A/out.tsv translator_data_default_2/moonlight/out.tsv translator_data_default_2/sleeplessnight/out.tsv translator_data_default_2/blackswan/out.tsv translator_data_default_2/dev-0/bleu.txt translator_data_default_2/dev-1/bleu.txt translator_data_default_2/test-A/bleu.txt translator_data_default_2/moonlight/bleu.txt translator_data_default_2/sleeplessnight/bleu.txt translator_data_default_2/blackswan/bleu.txt
+
+#${TRANSLATOR_DATA_VN} ${TRANSLATOR_DATA_DEFAULT} ${TRANSLATOR_DATA_DEFAULT_32} ${TRANSLATOR_DATA_ALL} ${TRANSLATOR_DATA_ALL_NMT} ${TRANSLATOR_DATA_DEFAULT_NMT} ${TRANSLATOR_DATA_ALL_NMT_5} ${TRANSLATOR_DATA_DEFAULT_NMT_5}
+
+all: ${PARALLEL_CORPUS} ${TRAIN_DATA_VN} ${DEV_0} ${DEV_1} ${TEST_A} ${TEST_DATA} ${TRANSLATOR_DATA_VN} ${TRANSLATOR_DATA_DEFAULT} ${TRANSLATOR_DATA_DEFAULT_32} ${TRANSLATOR_DATA_ALL} ${TRANSLATOR_DATA_DEFAULT_NMT_5} ${TRANSLATOR_DATA_ALL_NMT_5} ${TRANSLATOR_DATA_DEFAULT_2} ${TRANSLATOR_DATA_DEFAULT_32_2}
+
+# --------------------------------------------
+#  
+#
+# TRANSLATOR NMT DATA DEFAULT 5
+#
+#
+# --------------------------------------------
+
+# --------------------------------------------
+# Translation 
+# --------------------------------------------
+
+translator_data_default_NMT_5/%/bleu.txt: translator_data_default_NMT_5/%/out.tsv translator_data_default_NMT_5/%/expected.tsv
+	${MOSES_SCRIPTS_DIR}/generic/multi-bleu.perl $(word 2,$^) < $< > $@
+
+translator_data_default_NMT_5/%/out.tsv: translator_data_default_NMT_5/%/in.tsv translator_data_default_NMT_5/model/model.npz
+	./Script/preprocess.sh ${SRC} < $< |\
+	 $(BPE_DIR)/apply_bpe.py -c translator_data_default_NMT_5/model/${SRC}${TRG}.bpe |\
+	 $(MARIAN_DIR)/marian-decoder -m translator_data_default_NMT_5/model/model.npz --type s2s -v translator_data_default_NMT_5/corpus/preprocessed.bpe.${SRC}.yml translator_data_default_NMT_5/corpus/preprocessed.bpe.${TRG}.yml |\
+	 sed -r 's/(@@ )|(@@ ?$$)//g' |\
+	 ./Script/postprocess.sh ${TRG} > $@
+
+#-------------------------------------------------------------
+# NMT model
+#-------------------------------------------------------------
+
+translator_data_default_NMT_5/model/model.npz: translator_data_default_NMT_5/corpus/preprocessed.bpe.${SRC} translator_data_default_NMT_5/corpus/preprocessed.bpe.${TRG}
+	$(MARIAN_DIR)/marian --type s2s -e 5 --train-set $^ --model $@  --disp-freq 100
+
+#-------------------------------------------------------------
+# BPE
+#-------------------------------------------------------------
+
+translator_data_default_NMT_5/model/${SRC}${TRG}.bpe: translator_data_default_NMT_5/corpus/preprocessed.${SRC} translator_data_default_NMT_5/corpus/preprocessed.${TRG}
+	mkdir -p translator_data_default_NMT_5/model
+	cat $^ | $(BPE_DIR)/learn_bpe.py -s $(MAX_WORDS) > $@
+
+translator_data_default_NMT_5/corpus/preprocessed.bpe.%: translator_data_default_NMT_5/corpus/preprocessed.% translator_data_default_NMT_5/model/${SRC}${TRG}.bpe
+	$(BPE_DIR)/apply_bpe.py -c translator_data_default_NMT_5/model/${SRC}${TRG}.bpe < $< > $@
+
+#-------------------------------------------------------------
+# Preprocessing
+#-------------------------------------------------------------
+
+translator_data_default_NMT_5/%/in.tsv: Data/data_test_VN/%/in.tsv
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
+
+translator_data_default_NMT_5/%/expected.tsv: Data/data_test_VN/%/expected.tsv
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py | ./Script/preprocess.sh ${SRC} | ./Script/postprocess.sh ${TRG} > $@
+
+translator_data_default_NMT_5/corpus/preprocessed.%: translator_data_default_NMT_5/corpus/%.txt
+	./Script/preprocess.sh $(subst corpus/,,$(subst .txt,,$<)) < $< > $@
+
+translator_data_default_NMT_5/corpus/${SRC}.txt translator_data_default_NMT_5/corpus/${TRG}.txt: Data/train_default_data/train.tsv.gz
+	mkdir -p translator_data_default_NMT_5/corpus/
+	zcat $< | tee >(cut -f 1 > translator_data_default_NMT_5/corpus/${SRC}.txt) | cut -f 2 > translator_data_default_NMT_5/corpus/${TRG}.txt
+
+# --------------------------------------------
+#  
+#
+# TRANSLATOR NMT DATA DEFAULT 5
+#
+#
+# --------------------------------------------
+
+# --------------------------------------------
+#  
+#
+# TRANSLATOR NMT DATA ALL 5
+#
+#
+# --------------------------------------------
+
+# --------------------------------------------
+# Translation 
+# --------------------------------------------
+
+translator_data_all_NMT_5/%/bleu.txt: translator_data_all_NMT_5/%/out.tsv translator_data_all_NMT_5/%/expected.tsv
+	${MOSES_SCRIPTS_DIR}/generic/multi-bleu.perl $(word 2,$^) < $< > $@
+
+translator_data_all_NMT_5/%/out.tsv: translator_data_all_NMT_5/%/in.tsv translator_data_all_NMT_5/model/model.npz
+	./Script/preprocess.sh ${SRC} < $< |\
+	 $(BPE_DIR)/apply_bpe.py -c translator_data_all_NMT_5/model/${SRC}${TRG}.bpe |\
+	 $(MARIAN_DIR)/marian-decoder -m translator_data_all_NMT_5/model/model.npz --type s2s -v translator_data_all_NMT_5/corpus/preprocessed.bpe.${SRC}.yml translator_data_all_NMT_5/corpus/preprocessed.bpe.${TRG}.yml |\
+	 sed -r 's/(@@ )|(@@ ?$$)//g' |\
+	 ./Script/postprocess.sh ${SRC} > $@
+
+#-------------------------------------------------------------
+# NMT model
+#-------------------------------------------------------------
+
+translator_data_all_NMT_5/model/model.npz: translator_data_all_NMT_5/corpus/preprocessed.bpe.${SRC} translator_data_all_NMT_5/corpus/preprocessed.bpe.${TRG}
+	$(MARIAN_DIR)/marian --type s2s -e 5 --train-set $^ --model $@  --disp-freq 100
+
+#-------------------------------------------------------------
+# BPE
+#-------------------------------------------------------------
+
+translator_data_all_NMT_5/model/${SRC}${TRG}.bpe: translator_data_all_NMT_5/corpus/preprocessed.${SRC} translator_data_all_NMT_5/corpus/preprocessed.${TRG}
+	mkdir -p translator_data_all_NMT_5/model
+	cat $^ | $(BPE_DIR)/learn_bpe.py -s $(MAX_WORDS) > $@
+
+translator_data_all_NMT_5/corpus/preprocessed.bpe.%: translator_data_all_NMT_5/corpus/preprocessed.% translator_data_all_NMT_5/model/${SRC}${TRG}.bpe
+	$(BPE_DIR)/apply_bpe.py -c translator_data_all_NMT_5/model/${SRC}${TRG}.bpe < $< > $@
+
+#-------------------------------------------------------------
+# Preprocessing
+#-------------------------------------------------------------
+
+translator_data_all_NMT_5/%/in.tsv: Data/data_test_VN/%/in.tsv
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
+
+translator_data_all_NMT_5/%/expected.tsv: Data/data_test_VN/%/expected.tsv
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py | ./Script/preprocess.sh ${SRC} | ./Script/postprocess.sh ${TRG} > $@
+
+translator_data_all_NMT_5/corpus/preprocessed.%: translator_data_all_NMT_5/corpus/clear_text.%
+	./Script/preprocess.sh $(subst corpus/,,$(subst .txt,,$<)) < $< > $@
+
+translator_data_all_NMT_5/corpus/clear_text.${SRC} translator_data_all_NMT_5/corpus/clear_text.${TRG}: translator_data_all_NMT_5/corpus/text.${SRC} translator_data_all_NMT_5/corpus/text.${TRG}
+	${MOSES_SCRIPTS_DIR}/training/clean-corpus-n.perl ${MAIN_PATH}/translator_data_all_NMT_5/corpus/text ${SRC} ${TRG} ${MAIN_PATH}/translator_data_all_NMT_5/corpus/clear_text 1 200
+
+translator_data_all_NMT_5/corpus/text.${SRC} translator_data_all_NMT_5/corpus/text.${TRG}: Data/train/train_all.tsv.gz
+	mkdir -p translator_data_all_NMT_5/corpus/
+	zcat $? | tee >(cut -f 1 | python3 Script/remove_script_tag.py > translator_data_all_NMT_5/corpus/text.${SRC}) | cut -f 2 | python3 Script/remove_script_tag.py > translator_data_all_NMT_5/corpus/text.${TRG}
+
+# --------------------------------------------
+#  
+#
+# TRANSLATOR NMT DATA ALL 5
+#
+#
+# --------------------------------------------
 
 # --------------------------------------------
 #  
@@ -123,15 +266,15 @@ translator_data_default_NMT/%/bleu.txt: translator_data_default_NMT/%/out.tsv tr
 translator_data_default_NMT/%/out.tsv: translator_data_default_NMT/%/in.tsv translator_data_default_NMT/model/model.npz
 	./Script/preprocess.sh ${SRC} < $< |\
 	 $(BPE_DIR)/apply_bpe.py -c translator_data_default_NMT/model/${SRC}${TRG}.bpe |\
-	 $(MARIAN_DIR)/marian-decoder -m model/model.npz --type s2s -v translator_data_default_NMT/corpus/preprocessed.bpe.${SRC}.yml translator_data_default_NMT/corpus/preprocessed.bpe.${TRG}.yml |\
+	 $(MARIAN_DIR)/marian-decoder -m translator_data_default_NMT/model/model.npz --type s2s -v translator_data_default_NMT/corpus/preprocessed.bpe.${SRC}.yml translator_data_default_NMT/corpus/preprocessed.bpe.${TRG}.yml |\
 	 sed -r 's/(@@ )|(@@ ?$$)//g' |\
-	 ./Script/postprocess.sh ${TRG} | python ./Script/correct_output.py > $@
+	 ./Script/postprocess.sh ${TRG} > $@
 
 #-------------------------------------------------------------
 # NMT model
 #-------------------------------------------------------------
 
-translator_data_default_NMT/model/model.npz: translator_data_default_NMT/corpus/preprocessed.bpe.en translator_data_default_NMT/corpus/preprocessed.bpe.pl
+translator_data_default_NMT/model/model.npz: translator_data_default_NMT/corpus/preprocessed.bpe.${SRC} translator_data_default_NMT/corpus/preprocessed.bpe.${TRG}
 	$(MARIAN_DIR)/marian --type s2s -e $(NB_OF_EPOCHS) --train-set $^ --model $@  --disp-freq 100
 
 #-------------------------------------------------------------
@@ -153,7 +296,7 @@ translator_data_default_NMT/%/in.tsv: Data/data_test_VN/%/in.tsv
 	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
 
 translator_data_default_NMT/%/expected.tsv: Data/data_test_VN/%/expected.tsv
-	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py | ./Script/preprocess.sh ${SRC} | ./Script/postprocess.sh ${TRG} > $@
 
 translator_data_default_NMT/corpus/preprocessed.%: translator_data_default_NMT/corpus/%.txt
 	./Script/preprocess.sh $(subst corpus/,,$(subst .txt,,$<)) < $< > $@
@@ -188,15 +331,15 @@ translator_data_all_NMT/%/bleu.txt: translator_data_all_NMT/%/out.tsv translator
 translator_data_all_NMT/%/out.tsv: translator_data_all_NMT/%/in.tsv translator_data_all_NMT/model/model.npz
 	./Script/preprocess.sh ${SRC} < $< |\
 	 $(BPE_DIR)/apply_bpe.py -c translator_data_all_NMT/model/${SRC}${TRG}.bpe |\
-	 $(MARIAN_DIR)/marian-decoder -m model/model.npz --type s2s -v translator_data_all_NMT/corpus/preprocessed.bpe.${SRC}.yml translator_data_all_NMT/corpus/preprocessed.bpe.${TRG}.yml |\
+	 $(MARIAN_DIR)/marian-decoder -m translator_data_all_NMT/model/model.npz --type s2s -v translator_data_all_NMT/corpus/preprocessed.bpe.${SRC}.yml translator_data_all_NMT/corpus/preprocessed.bpe.${TRG}.yml |\
 	 sed -r 's/(@@ )|(@@ ?$$)//g' |\
-	 ./Script/postprocess.sh ${TRG} | python ./Script/correct_output.py > $@
+	 ./Script/postprocess.sh ${TRG} > $@
 
 #-------------------------------------------------------------
 # NMT model
 #-------------------------------------------------------------
 
-translator_data_all_NMT/model/model.npz: translator_data_all_NMT/corpus/preprocessed.bpe.en translator_data_all_NMT/corpus/preprocessed.bpe.pl
+translator_data_all_NMT/model/model.npz: translator_data_all_NMT/corpus/preprocessed.bpe.${SRC} translator_data_all_NMT/corpus/preprocessed.bpe.${TRG}
 	$(MARIAN_DIR)/marian --type s2s -e $(NB_OF_EPOCHS) --train-set $^ --model $@  --disp-freq 100
 
 #-------------------------------------------------------------
@@ -218,7 +361,7 @@ translator_data_all_NMT/%/in.tsv: Data/data_test_VN/%/in.tsv
 	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
 
 translator_data_all_NMT/%/expected.tsv: Data/data_test_VN/%/expected.tsv
-	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py | ./Script/preprocess.sh ${SRC} | ./Script/postprocess.sh ${TRG} > $@
 
 translator_data_all_NMT/corpus/preprocessed.%: translator_data_all_NMT/corpus/clear_text.%
 	./Script/preprocess.sh $(subst corpus/,,$(subst .txt,,$<)) < $< > $@
@@ -256,7 +399,7 @@ translator_data_all/%/bleu.txt: translator_data_all/%/out.tsv translator_data_al
 translator_data_all/%/out.tsv: translator_data_all/%/in.tsv translator_data_all/arena/model/moses.ini
 	./Script/preprocess.sh ${SRC} < $< |\
            ${MOSES_BIN_DIR}/moses -f translator_data_all/arena/model/moses.ini -search-algorithm 1 -threads ${NUM_THREADS} |\
-           ./Script/postprocess.sh ${TRG} | python3 Script/correct_output.py > $@
+           ./Script/postprocess.sh ${TRG} > $@
 
 # --------------------------------------------
 # Generating translation model
@@ -298,7 +441,7 @@ translator_data_all/%/in.tsv: Data/data_test_VN/%/in.tsv
 	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
 
 translator_data_all/%/expected.tsv: Data/data_test_VN/%/expected.tsv
-	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py | ./Script/preprocess.sh ${SRC} | ./Script/postprocess.sh ${TRG} > $@
 
 translator_data_all/corpus/preprocessed.%: translator_data_all/corpus/clear_text.%
 	./Script/preprocess.sh $(subst corpus/,,$(subst .txt,,$<)) < $< > $@
@@ -321,6 +464,163 @@ translator_data_all/corpus/text.${SRC} translator_data_all/corpus/text.${TRG}: D
 # --------------------------------------------
 #  
 #
+# TRANSLATOR DATA DEFAULT 2 32000
+#
+#
+# --------------------------------------------
+
+
+# --------------------------------------------
+# Translation 
+# --------------------------------------------
+
+translator_data_default_32_2/%/bleu.txt: translator_data_default_32_2/%/out.tsv translator_data_default_32_2/%/expected.tsv
+	${MOSES_SCRIPTS_DIR}/generic/multi-bleu.perl $(word 2,$^) < $< > $@
+
+translator_data_default_32_2/%/out.tsv: translator_data_default_32_2/%/in.tsv translator_data_default_32_2/arena/model/moses.ini
+	./Script/preprocess.sh ${SRC} < $< |\
+           ${MOSES_BIN_DIR}/moses -f translator_data_default_32_2/arena/model/moses.ini -search-algorithm 1 -threads ${NUM_THREADS} |\
+           ./Script/postprocess.sh ${TRG} > $@
+
+# --------------------------------------------
+# Generating translation model
+# --------------------------------------------
+
+translator_data_default_32_2/arena/model/moses.ini: translator_data_default_32_2/arena/model/phrase-table.minphr
+	perl -i -pne 's/PhraseDictionaryMemory/PhraseDictionaryCompact$1/' $@
+	perl -i -pne 's/path=(.*phrase-table)\.gz/path=\.\/translator_data_default_32_2\/arena\/model\/phrase-table.minphr/' $@
+
+translator_data_default_32_2/arena/model/phrase-table.minphr: translator_data_default_32_2/arena/model/phrase-table.gz
+	${MOSES_BIN_DIR}/processPhraseTableMin -in $< -out translator_data_default_32_2/arena/model/phrase-table -nscores 4 -threads ${NUM_THREADS}
+
+translator_data_default_32_2/arena/model/phrase-table.gz: translator_data_default_32_2/corpus/lm/${TRG}.blm translator_data_default_32_2/corpus/preprocessed.${SRC} translator_data_default_32_2/corpus/preprocessed.${TRG}
+	mkdir -p translator_data_default_32_2/arena
+	mkdir -p translator_data_default_32_2/tmp
+	${MOSES_SCRIPTS_DIR}/training/train-model.perl --root-dir translator_data_default_32_2/arena -external-bin-dir ${MGIZA_BIN_DIR} -mgiza -mgiza-cpus ${NUM_THREADS} -cores ${NUM_THREADS} -corpus translator_data_default_32_2/corpus/preprocessed -f ${SRC} -e ${TRG} -alignment grow-diag-final-and -lm 0:3:${MAIN_PATH}/translator_data_default_32_2/corpus/lm/${TRG}.blm:8 -temp-dir ${MAIN_PATH}/translator_data_default_32_2/tmp 2>&1 | tee translator_data_default_32_2/arena/moses.log
+
+#perl -i -pne 's/PhraseDictionaryMemory/PhraseDictionaryCompact$1/' train/model/moses.ini
+#	perl -i -pne 's/path=(.*phrase-table)\.gz/path=\.\/train\/model\/phrase-table.minphr/' train/model/moses.ini
+
+
+
+#-------------------------------------------------------------
+# Target language model
+#-------------------------------------------------------------
+
+translator_data_default_32_2/corpus/lm/%.blm: translator_data_default_32_2/corpus/lm/%.arpa
+	${MOSES_BIN_DIR}/build_binary -i $< $@
+
+translator_data_default_32_2/corpus/lm/${TRG}.arpa: translator_data_default_32_2/corpus/preprocessed.${TRG}
+	mkdir -p translator_data_default_32_2/corpus/lm
+	${MOSES_BIN_DIR}/lmplz  -o 5 -S 80% < $< > $@
+
+#-------------------------------------------------------------
+# Preprocessing
+#-------------------------------------------------------------
+
+translator_data_default_32_2/%/in.tsv: Data/data_test_VN/%/in.tsv
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
+
+translator_data_default_32_2/%/expected.tsv: Data/data_test_VN/%/expected.tsv
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py | ./Script/preprocess.sh ${SRC} | ./Script/postprocess.sh ${TRG} > $@
+
+translator_data_default_32_2/corpus/preprocessed.%: translator_data_default_32_2/corpus/%.txt
+	./Script/preprocess.sh $(subst corpus/,,$(subst .txt,,$<)) < $< > $@
+
+translator_data_default_32_2/corpus/${SRC}.txt translator_data_default_32_2/corpus/${TRG}.txt: Data/train_default_data/train2_32.tsv.gz
+	mkdir -p translator_data_default_32_2/corpus/
+	zcat $< | tee >(cut -f 1 > translator_data_default_32_2/corpus/${SRC}.txt) | cut -f 2 > translator_data_default_32_2/corpus/${TRG}.txt
+
+# --------------------------------------------
+#  
+#
+# TRANSLATOR DATA DEFAULT 2 32000
+#
+#
+# --------------------------------------------
+
+# --------------------------------------------
+#  
+#
+# TRANSLATOR DATA DEFAULT 2 1000000
+#
+#
+# --------------------------------------------
+
+
+# --------------------------------------------
+# Translation 
+# --------------------------------------------
+
+translator_data_default_2/%/bleu.txt: translator_data_default_2/%/out.tsv translator_data_default_2/%/expected.tsv
+	${MOSES_SCRIPTS_DIR}/generic/multi-bleu.perl $(word 2,$^) < $< > $@
+
+translator_data_default_2/%/out.tsv: translator_data_default_2/%/in.tsv translator_data_default_2/arena/model/moses.ini
+	./Script/preprocess.sh ${SRC} < $< |\
+           ${MOSES_BIN_DIR}/moses -f translator_data_default_2/arena/model/moses.ini -search-algorithm 1 -threads ${NUM_THREADS} |\
+           ./Script/postprocess.sh ${TRG} > $@
+
+# --------------------------------------------
+# Generating translation model
+# --------------------------------------------
+
+translator_data_default_2/arena/model/moses.ini: translator_data_default_2/arena/model/phrase-table.minphr
+	perl -i -pne 's/PhraseDictionaryMemory/PhraseDictionaryCompact$1/' $@
+	perl -i -pne 's/path=(.*phrase-table)\.gz/path=\.\/translator_data_default_2\/arena\/model\/phrase-table.minphr/' $@
+
+translator_data_default_2/arena/model/phrase-table.minphr: translator_data_default_2/arena/model/phrase-table.gz
+	${MOSES_BIN_DIR}/processPhraseTableMin -in $< -out translator_data_default_2/arena/model/phrase-table -nscores 4 -threads ${NUM_THREADS}
+
+translator_data_default_2/arena/model/phrase-table.gz: translator_data_default_2/corpus/lm/${TRG}.blm translator_data_default_2/corpus/preprocessed.${SRC} translator_data_default_2/corpus/preprocessed.${TRG}
+	mkdir -p translator_data_default_2/arena
+	mkdir -p translator_data_default_2/tmp
+	${MOSES_SCRIPTS_DIR}/training/train-model.perl --root-dir translator_data_default_2/arena -external-bin-dir ${MGIZA_BIN_DIR} -mgiza -mgiza-cpus ${NUM_THREADS} -cores ${NUM_THREADS} -corpus translator_data_default_2/corpus/preprocessed -f ${SRC} -e ${TRG} -alignment grow-diag-final-and -lm 0:3:${MAIN_PATH}/translator_data_default_2/corpus/lm/${TRG}.blm:8 -temp-dir ${MAIN_PATH}/translator_data_default_2/tmp 2>&1 | tee translator_data_default_2/arena/moses.log
+
+#perl -i -pne 's/PhraseDictionaryMemory/PhraseDictionaryCompact$1/' train/model/moses.ini
+#	perl -i -pne 's/path=(.*phrase-table)\.gz/path=\.\/train\/model\/phrase-table.minphr/' train/model/moses.ini
+
+
+
+#-------------------------------------------------------------
+# Target language model
+#-------------------------------------------------------------
+
+translator_data_default_2/corpus/lm/%.blm: translator_data_default_2/corpus/lm/%.arpa
+	${MOSES_BIN_DIR}/build_binary -i $< $@
+
+translator_data_default_2/corpus/lm/${TRG}.arpa: translator_data_default_2/corpus/preprocessed.${TRG}
+	mkdir -p translator_data_default_2/corpus/lm
+	${MOSES_BIN_DIR}/lmplz  -o 5 -S 80% < $< > $@
+
+#-------------------------------------------------------------
+# Preprocessing
+#-------------------------------------------------------------
+
+translator_data_default_2/%/in.tsv: Data/data_test_VN/%/in.tsv
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
+
+translator_data_default_2/%/expected.tsv: Data/data_test_VN/%/expected.tsv
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py | ./Script/preprocess.sh ${SRC} | ./Script/postprocess.sh ${TRG} > $@
+
+translator_data_default_2/corpus/preprocessed.%: translator_data_default_2/corpus/%.txt
+	./Script/preprocess.sh $(subst corpus/,,$(subst .txt,,$<)) < $< > $@
+
+translator_data_default_2/corpus/${SRC}.txt translator_data_default_2/corpus/${TRG}.txt: Data/train_default_data/train2.tsv.gz
+	mkdir -p translator_data_default_2/corpus/
+	zcat $< | tee >(cut -f 1 > translator_data_default_2/corpus/${SRC}.txt) | cut -f 2 > translator_data_default_2/corpus/${TRG}.txt
+
+# --------------------------------------------
+#  
+#
+# TRANSLATOR DATA DEFAULT 2 1000000
+#
+#
+# --------------------------------------------
+
+
+# --------------------------------------------
+#  
+#
 # TRANSLATOR DATA DEFAULT 32000
 #
 #
@@ -337,7 +637,7 @@ translator_data_default_32/%/bleu.txt: translator_data_default_32/%/out.tsv tran
 translator_data_default_32/%/out.tsv: translator_data_default_32/%/in.tsv translator_data_default_32/arena/model/moses.ini
 	./Script/preprocess.sh ${SRC} < $< |\
            ${MOSES_BIN_DIR}/moses -f translator_data_default_32/arena/model/moses.ini -search-algorithm 1 -threads ${NUM_THREADS} |\
-           ./Script/postprocess.sh ${TRG} | python3 Script/correct_output.py > $@
+           ./Script/postprocess.sh ${TRG} > $@
 
 # --------------------------------------------
 # Generating translation model
@@ -379,7 +679,7 @@ translator_data_default_32/%/in.tsv: Data/data_test_VN/%/in.tsv
 	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
 
 translator_data_default_32/%/expected.tsv: Data/data_test_VN/%/expected.tsv
-	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py | ./Script/preprocess.sh ${SRC} | ./Script/postprocess.sh ${TRG} > $@
 
 translator_data_default_32/corpus/preprocessed.%: translator_data_default_32/corpus/%.txt
 	./Script/preprocess.sh $(subst corpus/,,$(subst .txt,,$<)) < $< > $@
@@ -415,7 +715,7 @@ translator_data_default/%/bleu.txt: translator_data_default/%/out.tsv translator
 translator_data_default/%/out.tsv: translator_data_default/%/in.tsv translator_data_default/arena/model/moses.ini
 	./Script/preprocess.sh ${SRC} < $< |\
            ${MOSES_BIN_DIR}/moses -f translator_data_default/arena/model/moses.ini -search-algorithm 1 -threads ${NUM_THREADS} |\
-           ./Script/postprocess.sh ${TRG} | python3 Script/correct_output.py > $@
+           ./Script/postprocess.sh ${TRG} > $@
 
 # --------------------------------------------
 # Generating translation model
@@ -457,7 +757,7 @@ translator_data_default/%/in.tsv: Data/data_test_VN/%/in.tsv
 	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
 
 translator_data_default/%/expected.tsv: Data/data_test_VN/%/expected.tsv
-	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py | ./Script/preprocess.sh ${SRC} | ./Script/postprocess.sh ${TRG} > $@
 
 translator_data_default/corpus/preprocessed.%: translator_data_default/corpus/%.txt
 	./Script/preprocess.sh $(subst corpus/,,$(subst .txt,,$<)) < $< > $@
@@ -492,7 +792,7 @@ translator_data_vn/%/bleu.txt: translator_data_vn/%/out.tsv translator_data_vn/%
 translator_data_vn/%/out.tsv: translator_data_vn/%/in.tsv translator_data_vn/arena/model/moses.ini
 	./Script/preprocess.sh ${SRC} < $< |\
            ${MOSES_BIN_DIR}/moses -f translator_data_vn/arena/model/moses.ini -search-algorithm 1 -threads ${NUM_THREADS} |\
-           ./Script/postprocess.sh ${TRG} | python3 Script/correct_output.py > $@
+           ./Script/postprocess.sh ${TRG} > $@
 
 # --------------------------------------------
 # Generating translation model
@@ -534,7 +834,7 @@ translator_data_vn/%/in.tsv: Data/data_test_VN/%/in.tsv
 	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
 
 translator_data_vn/%/expected.tsv: Data/data_test_VN/%/expected.tsv
-	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py > $@
+	python3 Script/remove_script_tag.py < $< | python3 Script/remove_script_tag_renpy.py | ./Script/preprocess.sh ${SRC} | ./Script/postprocess.sh ${TRG} > $@
 
 translator_data_vn/corpus/preprocessed.%: translator_data_vn/corpus/clear_text.%
 	./Script/preprocess.sh $(subst corpus/,,$(subst .txt,,$<)) < $< > $@
@@ -561,8 +861,14 @@ translator_data_vn/corpus/text.${SRC} translator_data_vn/corpus/text.${TRG}: Dat
 Data/train/train_all.tsv.gz: ${TRAIN_DATA_VN} Data/train_default_data/train_1000000.tsv.xz
 	xzcat $? | perl -ne 'print if $$. % 1 == 0' | gzip > $@
 
+Data/train_default_data/train2_32.tsv.gz:
+	xzcat Data/train_default_data/train2_1000000.tsv.xz | perl -ne 'print if $$. % 31 == 0' | gzip > $@
+
 Data/train_default_data/train_32.tsv.gz:
 	xzcat Data/train_default_data/train_1000000.tsv.xz | perl -ne 'print if $$. % 31 == 0' | gzip > $@
+
+Data/train_default_data/train2.tsv.gz:
+	xzcat Data/train_default_data/train2_1000000.tsv.xz | perl -ne 'print if $$. % 1 == 0' | gzip > $@
 
 Data/train_default_data/train.tsv.gz:
 	xzcat Data/train_default_data/train_1000000.tsv.xz | perl -ne 'print if $$. % 1 == 0' | gzip > $@

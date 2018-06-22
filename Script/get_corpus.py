@@ -4,10 +4,10 @@ import glob
 import pathlib
 import argparse
 
-#regex
+# regex
 regex = re.compile(r'(;;)?(\[.+])?(.+)((\[np])|(\[wvl]))')
 
-#args
+# args
 parser = argparse.ArgumentParser()
 parser.add_argument("path", type=str,
                     help="path of working")
@@ -16,7 +16,8 @@ parser.add_argument("visual_novel_directory", type=str,
 parser.add_argument("text_directory", type=str,
                     help="directory of text from visual_novel")
 args = parser.parse_args()
-#funkction
+
+# funkction
 for _file in glob.glob(args.path + "/" + args.visual_novel_directory + "/*.ks"):
     name = _file.split(sep='/')[-1].split(sep='.')[0]
     pathlib.Path(args.path + "/" + args.text_directory).mkdir(parents=True, exist_ok=True)
@@ -32,4 +33,3 @@ for _file in glob.glob(args.path + "/" + args.visual_novel_directory + "/*.ks"):
 
     f.close()
     out.close()
-
