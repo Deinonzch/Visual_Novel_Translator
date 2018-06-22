@@ -6,7 +6,7 @@ MARIAN_DIR=/home/deinonzch/Pulpit/marian/build
 QUOT=./translator/get_text/quotation.txt
 TEXT=./translator/get_text/text.txt
 TRANSLATION=./translator/translated_text/translation.txt
-model=translator_data_all/arena/model/moses.ini
+model=translator_data_all
 mt=smt
 
 if [ $4 == my_model ]; then
@@ -52,17 +52,17 @@ if [ $mt == nmt ]; then
 else
 	if [ $1 = "kirikiri" ]; then
 		python3 translator/get_text_kirikiri.py $2 ${TEXT} ${QUOT}
-		./Script/preprocess.sh en < ${TEXT} | /home/deinonzch/Pulpit/mosesdecoder/bin/moses -f ${model} -search-algorithm 1 -threads 8 | ./Script/postprocess.sh pl | python3 Script/correct_output.py > ${TRANSLATION}
+		./Script/preprocess.sh en < ${TEXT} | /home/deinonzch/Pulpit/mosesdecoder/bin/moses -f ${model}/arena/model/moses.ini -search-algorithm 1 -threads 8 | ./Script/postprocess.sh pl | python3 Script/correct_output.py > ${TRANSLATION}
 		python3 translator/give_text_kirikiri.py $2 ${TRANSLATION} ${QUOT} > $3
 	fi
 	if [ $1 = "nscripter" ]; then
 		python3 translator/get_text_nscripter.py ${TEXT} ${QUOT} < $2
-		./Script/preprocess.sh en < ${TEXT} | /home/deinonzch/Pulpit/mosesdecoder/bin/moses -f ${model} -search-algorithm 1 -threads 8 | ./Script/postprocess.sh pl | python3 Script/correct_output.py > ${TRANSLATION}
+		./Script/preprocess.sh en < ${TEXT} | /home/deinonzch/Pulpit/mosesdecoder/bin/moses -f ${model}/arena/model/moses.ini -search-algorithm 1 -threads 8 | ./Script/postprocess.sh pl | python3 Script/correct_output.py > ${TRANSLATION}
 		python3 translator/give_text_nscripter.py $2 ${TRANSLATION} ${QUOT} > $3
 	fi
 	if [ $1 = "renpy" ]; then
 		python3 translator/get_text_renpy.py ${TEXT} ${QUOT} < $2
-		./Script/preprocess.sh en < ${TEXT} | /home/deinonzch/Pulpit/mosesdecoder/bin/moses -f ${model} -search-algorithm 1 -threads 8 | ./Script/postprocess.sh pl | python3 Script/correct_output.py > ${TRANSLATION}
+		./Script/preprocess.sh en < ${TEXT} | /home/deinonzch/Pulpit/mosesdecoder/bin/moses -f ${model}/arena/model/moses.ini -search-algorithm 1 -threads 8 | ./Script/postprocess.sh pl | python3 Script/correct_output.py > ${TRANSLATION}
 		python3 translator/give_text_renpy.py $2 ${TRANSLATION} ${QUOT} > $3
 	fi
 fi
