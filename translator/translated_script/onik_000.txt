@@ -1,0 +1,355 @@
+﻿void main()
+{
+
+//■オープニング（車中の白昼夢）
+//if %RenaPan_Lv3_read=1 gosub *Dark_mode_start
+//if %RenaPan_clr=1 gosub *Tomi_Kura_mord_start
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
+//gosub //*Opening
+//mov %NEW_TIPS,0
+//rmode on
+//caption"ひぐらしのなく頃に　「鬼隠し編」"
+//mov %TIP_START,1
+
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	PlayBGM( 2, "lsys21", 128, 0 );
+//dwaveloop 1, "wav\Densya.wav"
+//!sd
+//locate 1,7
+
+	SetDrawingPointOfMessage( 0, 6 );
+	SetStyleOfMessageSwinging( 1 );
+
+//　...誰かが、ずっと謝っている気がした￥
+	OutputLine(NULL, "　…誰かが、ずっと謝っている気がした。",
+		   NULL, "...Ktoś musiał za chwilę przeprosić.", Line_Normal);
+	ClearMessage();
+
+//　彼女は何を謝っているのだろう＠
+	OutputLine(NULL, "　彼女は何を謝っているのだろう。",
+		   NULL, "Zastanawiam się, jak ona płacze.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　それに聞き耳を立てるのは悪い気がしたので、意識的に聞かないようにした￥
+	OutputLine(NULL, "　それに聞き耳を立てるのは悪い気がしたので、意識的に聞かないようにした。",
+		   NULL, "Czułem się źle, więc starałem się ją zignorować.", Line_Normal);
+	ClearMessage();
+
+//　親類の葬儀のために戻った、久しぶりの都会だった＠
+	OutputLine(NULL, "　親類の葬儀のために戻った、久しぶりの都会だった。",
+		   NULL, "Byłem wtedy na jakiś czas, kiedy wycofałem się do miasta.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　つい先月まで住んでいたにも関わらず、都会の賑やかさに圧倒された＠
+	OutputLine(NULL, "　つい先月まで住んでいたにも関わらず、都会の賑やかさに圧倒された。",
+		   NULL, "Mimo, że apostowałbym tam mieszkać aż do zeszłego miesiąca, znalazłam to miejsce dla miasta.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　高層ビルに何車線もの道路＠
+	OutputLine(NULL, "　高層ビルに何車線もの道路。",
+		   NULL, "Te szmaty i rodowe drogi.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　歌うように騒がしい横断歩道のメロディ＠
+	OutputLine(NULL, "　歌うように騒がしい横断歩道のメロディ。",
+		   NULL, "- Tak.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　駅前での騒々しい選挙演説すらも今では懐かしかった￥
+	OutputLine(NULL, "　駅前での騒々しい選挙演説すらも今では懐かしかった。",
+		   NULL, "Nawet kampania zamówienia przed stacją, poczułem na to wrażenie.", Line_Normal);
+	ClearMessage();
+
+//　今、住んでいる土地にはそんな賑やかなものはない＠
+	OutputLine(NULL, "　今、住んでいる土地にはそんな賑やかなものはない。",
+		   NULL, "W tym miejscu, gdzie mieszkam teraz, tu nikt nie jest tak żywy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　あるのはセミの声と清流のせせらぎ＠そして、ひぐらしの声＠
+	OutputLine(NULL, "　あるのはセミの声と清流のせせらぎ。",
+		   NULL, "Ten apostor to tylko okrzyk szarańczy.", Line_WaitForInput);
+	OutputLine(NULL, "そして、ひぐらしの声。",
+		   NULL, "A płacz higurashi... Wieczorna.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　そんな静けさに寂しさでなく、安らぎを感じ始めたのは最近だ￥
+	OutputLine(NULL, "　そんな静けさに寂しさでなく、安らぎを感じ始めたのは最近だ。",
+		   NULL, "Raczej mówiąc, że czuję się samotna, ta spokojniejsza zaczęła się na marne.", Line_Normal);
+	ClearMessage();
+
+//　確かに今住む土地には何もない＠
+	OutputLine(NULL, "　確かに今住む土地には何もない。",
+		   NULL, "Teraz już nic nie ma.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　気の利いたハンバーガー屋はおろか、自動販売機すらない＠
+	OutputLine(NULL, "　気の利いたハンバーガー屋はおろか、自動販売機すらない。",
+		   NULL, "Powtarzam:", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　レコード屋もないし、レストランもないし＠ゲームセンターもない＠
+	OutputLine(NULL, "　レコード屋もないし、レストランもないし、",
+		   NULL, "Żadnych sztuczek, żadnych restauracji...", Line_WaitForInput);
+	OutputLine(NULL, "ゲームセンターもない。",
+		   NULL, "I bez arkady.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　アイスクリーム屋なんてもってのほかだ＠
+	OutputLine(NULL, "　アイスクリーム屋なんてもってのほかだ。",
+		   NULL, "Nawet stowka na lody.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　最寄りの町まで行けばあるにはあるが、自転車で１時間もかかる￥
+	OutputLine(NULL, "　最寄りの町まで行けばあるにはあるが、自転車で１時間もかかる。",
+		   NULL, "Najbliższy miasto ma takie takie rzeczy, ale ten samuraj wyjeżdża godzinę po rowerze.", Line_Normal);
+	ClearMessage();
+
+//　だが、考えてみればそれに不便を感じる必要はなかった￥
+	OutputLine(NULL, "　だが、考えてみればそれに不便を感じる必要はなかった。",
+		   NULL, "Ale mówiąc o tym, to nie był dobry interes.", Line_Normal);
+	ClearMessage();
+
+//　前の町には確かにレコード屋もゲームセンターもアイスクリーム屋もあったが、別にそれらを頻繁に利用していたわけじゃない＠
+	OutputLine(NULL, "　前の町には確かにレコード屋もゲームセンターもアイスクリーム屋もあったが、別にそれらを頻繁に利用していたわけじゃない。",
+		   NULL, "W sklepach muzycznych, arkades i lodami w salonie, ale nie było tak, jakbym kiedykolwiek zawiódł.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　アイスクリーム屋に至っては、１０年も住みながらついに一度も入ることはなかったのだから＠
+	OutputLine(NULL, "　アイスクリーム屋に至っては、１０年も住みながらついに一度も入ることはなかったのだから。",
+		   NULL, "Mieszkałem w mieście od dziesięciu lat i nigdy nie byłam w lodówce.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　...一度くらいは食べに行けばよかった＠
+	OutputLine(NULL, "　…一度くらいは食べに行けばよかった。",
+		   NULL, "...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　今更ながらちょっと後悔￥
+	OutputLine(NULL, "　今更ながらちょっと後悔。",
+		   NULL, "To już nie ma sensu.", Line_Normal);
+	ClearMessage();
+
+//locate 3,7
+//　...誰かが、まだ謝り続けている￥
+	OutputLine(NULL, "　…誰かが、まだ謝り続けている。",
+		   NULL, "...Ktoś wciąż przeprasza.", Line_Normal);
+	ClearMessage();
+
+//click
+//	ClearMessage();
+
+//　彼女は誰に謝っているのだろう＠
+	OutputLine(NULL, "　彼女は誰に謝っているのだろう。",
+		   NULL, "Do kogo ona płacze?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　これだけ謝っているのだから、もう許してやればいいのに＠
+	OutputLine(NULL, "　これだけ謝っているのだから、もう許してやればいいのに。",
+		   NULL, "Sugeruje sobie przeprosiny, więc już jej przepraszam.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　彼女だって、こんなにも謝り続けることはないはずだ＠
+	OutputLine(NULL, "　彼女だって、こんなにも謝り続けることはないはずだ。",
+		   NULL, "Nikt nie powinien tyle przepraszać.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　いつまでも彼女を許そうとしない誰かに、俺は少し苛立ちを覚えた￥
+	OutputLine(NULL, "　いつまでも彼女を許そうとしない誰かに、俺は少し苛立ちを覚えた。",
+		   NULL, "Zacząłem się trochę złościć, żeby jej wybaczyć.", Line_Normal);
+	ClearMessage();
+
+//　どんな過ちだって、許されないことはないはずだ＠
+	OutputLine(NULL, "　どんな過ちだって、許されないことはないはずだ。",
+		   NULL, "Bez względu na to, jak źle się pomyłka, że apostownicy nie mają nic, czego mogą pomóc.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　取り返せないミスなんかない＠
+	OutputLine(NULL, "　取り返せないミスなんかない。",
+		   NULL, "Nie ma żadnych błędów.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　次から気をつければいい￥
+	OutputLine(NULL, "　次から気をつければいい。",
+		   NULL, "Następnym razem bardziej uważaj.", Line_Normal);
+	ClearMessage();
+
+//　...それでも彼女は謝り続けている￥
+	OutputLine(NULL, "　…それでも彼女は謝り続けている。",
+		   NULL, "...Ona wciąż już płacze. Nawet teraz.", Line_Normal);
+	ClearMessage();
+
+//　では...取り返しのつかない過ちを犯してしまったのだろうか￥
+	OutputLine(NULL, "　では…取り返しのつかない過ちを犯してしまったのだろうか？",
+		   NULL, "Więc... naprawdę coś zrobiła?", Line_Normal);
+	ClearMessage();
+
+//　一体彼女が何を犯したのか知らないが、取り返しがつかないものなら、なおのこと許してやるべきだ＠
+	OutputLine(NULL, "　一体彼女が何を犯したのか知らないが、取り返しがつかないものなら、なおのこと許してやるべきだ。",
+		   NULL, "Nie mam pojęcia, co ona robi", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　彼女がいくら謝ったって、どうにもならないのだから￥
+	OutputLine(NULL, "　彼女がいくら謝ったって、どうにもならないのだから。",
+		   NULL, "Bez względu na to, ile przeprasza, nic się nie zmieni.", Line_Normal);
+	ClearMessage();
+
+//　それでも彼女は、こんなにもみじめな声で謝り続けている...￥
+	OutputLine(NULL, "　それでも彼女は、こんなにもみじめな声で謝り続けている…。",
+		   NULL, "Ale mimo to, ona wciąż przeprasza...", Line_Normal);
+	ClearMessage();
+
+//　なあ、彼女に謝られている誰かさんよ＠
+	OutputLine(NULL, "　なあ、彼女に謝られている誰かさんよ。",
+		   NULL, "Ach, ty.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　もういい加減に彼女を許してやれよ＠
+	OutputLine(NULL, "　もういい加減に彼女を許してやれよ。",
+		   NULL, "Po co wpuszczać pan przed nami?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　こんなにも...みじめな声で謝っているんだから......￥
+	OutputLine(NULL, "　こんなにも…みじめな声で謝っているんだから……。",
+		   NULL, "W takim żałosnym głosie...", Line_Normal);
+	ClearMessage();
+
+//「圭一、そろそろ着くぞ＠起きなさい。＠
+	OutputLine(NULL, "「圭一、そろそろ着くぞ。",
+		   NULL, "\"Keiichi, my tam jesteśmy.", Line_WaitForInput);
+	OutputLine(NULL, "起きなさい。」",
+		   NULL, "Obudź się.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　親父に小突かれようやくまどろみから目を覚ました＠
+	OutputLine(NULL, "　親父に小突かれようやくまどろみから目を覚ました。",
+		   NULL, "W końcu skręciłam się z nóg mojego ojca.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawScene( "white", 400 );
+	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	DisableWindow();
+	DrawSceneWithMask( "bg_012", "c", 0, 0, 1300 );
+
+//　ようやく列車が終点に着いたようだった￥
+	OutputLine(NULL, "　ようやく列車が終点に着いたようだった。",
+		   NULL, "Wygląda na to, że pociąg dotarł do ostateczności.", Line_Normal);
+	ClearMessage();
+	PlayBGM( 2, "lsys20", 128, 0 );
+
+//　新幹線やら電車やらを乗り継ぎ数時間＠
+	OutputLine(NULL, "　新幹線やら電車やらを乗り継ぎ数時間。",
+		   NULL, "Prosimy o uwagę.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　窓の外の風景は、半日前までいた都会と同じ国であることを＠
+	OutputLine(NULL, "　窓の外の風景は、半日前までいた都会と同じ国であることを、",
+		   NULL, "Trudno uwierzyć, że ziemia jest poza oknem i w mieście, a ja w połowie dnia w tym samym kraju.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　いや、同じ時代であることすら疑わせる￥
+	OutputLine(NULL, "　いや、同じ時代であることすら疑わせる。",
+		   NULL, "Nie... to byli sami.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawSceneWithMask( "bg_124", "right", 0, 0, 1300 );
+
+
+//　ここからさらに車で山道を走る￥
+	OutputLine(NULL, "　ここからさらに車で山道を走る。",
+		   NULL, "Od tego czasu, mówimy apostorowi, podejmując samochód w góry.", Line_Normal);
+	ClearMessage();
+
+//*******************************************************
+
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+
+	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawSceneWithMask( "bg_208", "right", 0, 0, 1300 );
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	DisableWindow();
+	DrawSceneWithMask( "bg_042", "right", 0, 0, 1300 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
+//*******************************************************
+
+	DisableWindow();
+	DrawSceneWithMask( "bg_038", "right", 0, 0, 1300 );
+	PlayBGM( 1, "msys12", 128, 0 );
+//!sd
+
+//　うっそうと木々が茂る山道が急に開けるとそこが...￥
+	OutputLine(NULL, "　うっそうと木々が茂る山道が急に開けるとそこが…、",
+		   NULL, "Krzesły lasu na ulicy nagle otworzyła się...", Line_Normal);
+	ClearMessage();
+
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+	DisableWindow();
+	DrawScene( "white", 400 );
+	DrawScene( "bg_048", 3000 );
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
+//!sd
+
+//　そこが今の俺の住む土地、雛見沢（ひなみざわ）だ￥
+	OutputLine(NULL, "　そこが今の俺の住む土地、雛見沢（ひなみざわ）だ。",
+		   NULL, "Hinamizawa.", Line_Normal);
+	ClearMessage();
+
+
+//mov %CAMP_MUGIC,0
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+//	Wait( 1000 );
+	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+
+
+}
